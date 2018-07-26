@@ -8,7 +8,7 @@ async function run(page) {/*
     await page.goto('https://beta.echannels.moi.gov.ae/echannels/web/client/default.html#/login', { timeout: 60000 });
     await page.waitForSelector('body > div.app.container > ui-view > div.landingServices.ng-scope > div.servicedatails.service1 > div.col-md-4.loginService.animated.fadeInRightBig > form > div:nth-child(1) > input', { timeout: 60000 });
     await page.type('body > div.app.container > ui-view > div.landingServices.ng-scope > div.servicedatails.service1 > div.col-md-4.loginService.animated.fadeInRightBig > form > div:nth-child(1) > input', 'harish@musafir.com', { delay: 1 });
-    await page.type('#password', 'Har@2018', { delay: 1 });
+    await page.type('#password', '', { delay: 1 });
     await page.click("body > div.app.container > ui-view > div.landingServices.ng-scope > div.servicedatails.service1 > div.col-md-4.loginService.animated.fadeInRightBig > form > div:nth-child(4) > div:nth-child(1) > button");
     await page.waitForSelector('body > div.modal.fade.ng-isolate-scope.in > div > div > div.modal-header.ng-scope > h3 > button', { timeout: 60000 }).then(async () => {
         //console.log('Popup window detected');
