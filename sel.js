@@ -8,7 +8,7 @@ const chrome = require('selenium-webdriver/chrome');
         await page.get('https://beta.echannels.moi.gov.ae/echannels/web/client/default.html#/login');
         await page.wait(webdriver.until.elementLocated(webdriver.By.xpath('/html/body/div[3]/ui-view/div[4]/div[3]/div[7]/form')), 10000);
         await page.findElement(webdriver.By.xpath('/html/body/div[3]/ui-view/div[4]/div[3]/div[7]/form/div[1]/input')).sendKeys('harish@musafir.com')
-        await page.findElement(webdriver.By.xpath('//*[@id="password"]')).sendKeys('Har@2018')
+        await page.findElement(webdriver.By.xpath('//*[@id="password"]')).sendKeys('')
         await page.findElement(webdriver.By.xpath('/html/body/div[3]/ui-view/div[4]/div[3]/div[7]/form/div[4]/div[1]/button')).click()
         await page.sleep(5000)
         await page.findElement(webdriver.By.xpath('/html/body/div[1]/div/div/div[1]/h3/button')).click()
